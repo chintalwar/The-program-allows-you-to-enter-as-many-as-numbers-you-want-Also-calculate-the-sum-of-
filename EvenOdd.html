@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/evenOdd.css"><!--Link for css-->
+    <title>Even Odd Number</title>
+</head>
+<body>
+
+    <!--Description section for describe the program-->
+    <div class ="description">
+        <img src="img/caluculation.png"><br> 
+        <h1>PROGRAM TO PRINT SUM OF THE ENTERED NUMBER'S</h1>
+        <hr>
+        <h4>DESCRIPTION</h4>
+        <p>The program allows you to enter as many as numbers you want, 
+            Also calculate the sum of the total numbers and even-odd numbers. 
+            To stop the program enter -1.</p>
+
+           <!--Submite function work for calculate as well as seprate the even odd numbers-->
+           <button type = "submit" class ="btnEvenOdd"  id ="btnEvenOdd" onclick="evenOdd()">Start</button>
+
+        <!--Div section for the  restart as well as display table-->   
+        <div id="restart">
+
+            <!--Table Creation-->
+             <div class ="table">
+                <h2>Calculation Table</h2>
+                <table id="CalTable">
+                    <tr>
+                        <th></th>
+                        <th>Number List</th>
+                        <th>Sum</th>
+                    </tr>
+                    <tr>
+                        <th>Number Entered By User</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Even Number</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Odd Number</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--Restart button--> 
+            <p>Click "RESTART" button to start again</p>
+            <button class = "btnEvenOdd" onclick="location.reload()" >RESTART</button>
+         </div>
+    </div>
+
+    <!--javascript link-->
+    <script type = "text/javascript" src = "js/evenOdd.js"></script>
+</body>
+</html>
